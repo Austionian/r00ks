@@ -1,4 +1,6 @@
 import Link from 'next/link'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCopyright } from '@fortawesome/free-solid-svg-icons'
 
 import Nav from './nav'
 import Meta from './meta'
@@ -31,7 +33,13 @@ export default function Layout({
           </div>
         )}
         <footer>
+          <FontAwesomeIcon icon={faCopyright} />{" "}{new Date().getFullYear()}
+          {' | '}
           Made with <a href='https://nextjs.org/'>Next.js</a>
+          {` | `}
+          <a href="https://github.com/Austionian/r00ks">
+            Source Code
+          </a>
         </footer>
       </div>
     </>

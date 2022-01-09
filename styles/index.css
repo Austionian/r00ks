@@ -163,6 +163,7 @@ h1 {
 
 h2 {
   font-size: var(--fontSize-5);
+  transition: 0.3s;
 }
 
 h3 {
@@ -184,6 +185,14 @@ h6 {
 h1 > a {
   color: inherit;
   text-decoration: none;
+}
+
+.index-intro {
+  margin-top: 150px;
+}
+
+svg {
+  height: 15px;
 }
 
 h2 > a,
@@ -289,6 +298,45 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
+}
+
+.btn {
+  background-color: var(--bg);
+  border-width: 1px;
+  cursor: pointer;
+  justify-content: center;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-appearance: none;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  box-shadow: none;
+  display: inline-flex;
+  height: 2.5rem;
+  line-height: 1.5;
+  position: relative;
+  vertical-align: top;
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: var(--fontWeight-semibold);
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+  margin: 1rem;
+}
+
+.btn:hover {
+  background-color: var(--color-primary-theme);
+  color: #fff;
+}
+
+.btn-lg {
+  font-size: var(--fontSize-3);
+}
+
+.btn > svg {
+  padding-left: 3px;
+  height: 25px;
 }
 
 /* Custom classes */
@@ -397,15 +445,15 @@ nav > ul > li {
 
 .flex-content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: flex-end;
 }
 
 
 .index-heading {
   max-width: var(--maxWidth-wrapper);
   margin: auto;
-  padding: var(--spacing-0) var(--spacing-5);
+  padding: var(--spacing-5);
 }
 
 .main-heading {
@@ -499,6 +547,14 @@ nav > ul > li {
 
 .blog-post-nav ul {
   margin: var(--spacing-0);
+}
+
+.blog-a {
+  padding-left: 15px;
+}
+
+.index-svg {
+  height: 60px;
 }
 
 .gatsby-highlight {
