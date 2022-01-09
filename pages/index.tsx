@@ -1,10 +1,14 @@
-import Head from 'next/head'
-import Layout, { siteTitle } from '../components/layout'
-import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData } from '../lib/posts'
-import Link from 'next/link'
-import Date from '../components/date'
 import { GetStaticProps } from 'next'
+import Head from 'next/head'
+import Link from 'next/link'
+import Image from 'next/image'
+
+import Layout, { siteTitle } from '../components/layout'
+import { getSortedProjectsData } from '../lib/projects'
+import Date from '../components/date'
+import utilStyles from '../styles/utils.module.css'
+
+const name = 'Austin Rooks'
 
 export default function Home({
   allPostsData
@@ -21,18 +25,25 @@ export default function Home({
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
-        <p>
-          (This is a sample website - you’ll be building a site like this in{' '}
-          <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
-        </p>
+        <Image
+          priority
+          src="/images/austin.png"
+          className={utilStyles.borderCircle}
+          height={144}
+          width={144}
+          alt={name}
+        />
+        <h2>Hi, I’m Austin, a software engineer based in Milwaukee. I'm currently creating products at Catholic Charities of St. Paul & Minneaplis to make critical non-profit processes more efficient.
+          <br />
+          I’m passionate about
+        </h2>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}>Work</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
+              <Link href={`/projects/${id}`}>
                 <a>{title}</a>
               </Link>
               <br />
@@ -48,7 +59,7 @@ export default function Home({
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const allPostsData = getSortedPostsData()
+  const allPostsData = getSortedProjectsData()
   return {
     props: {
       allPostsData
