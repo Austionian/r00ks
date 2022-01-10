@@ -32,8 +32,8 @@ export default function Layout({
             </Link>
           </div>
         )}
-        <footer>
-          <FontAwesomeIcon icon={faCopyright} />{" "}{new Date().getFullYear()}
+        <footer className='inline-flex'>
+          <FontAwesomeIcon icon={faCopyright} className='pr-1'/>{new Date().getFullYear()}
           {' | '}
           Made with <a href='https://nextjs.org/'>Next.js</a>
           {` | `}

@@ -4,8 +4,8 @@ import Link from 'next/link'
 
 import Layout from '../../components/layout'
 import { getAllPostIds, getPostData } from '../../lib/projects'
-import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
+import Pill from '../../components/pill'
 
 
 export default function Post({
@@ -13,7 +13,7 @@ export default function Post({
 }: {
   postData: {
     title: string
-    date: string
+    languages: string
     contentHtml: string
   }
 }) {
@@ -29,8 +29,8 @@ export default function Post({
           </Link>
         </div>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
-          <Date dateString={postData.date} />
+        <div className='flex align-start mt-4 mb-12'>
+          {postData.languages.split(', ').map(language => <Pill language={language} key={language}/>)}
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>

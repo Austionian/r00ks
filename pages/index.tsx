@@ -7,8 +7,8 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 import Layout, { siteTitle } from '../components/layout'
 import { getSortedProjectsData } from '../lib/projects'
-import Date from '../components/date'
 import utilStyles from '../styles/utils.module.css'
+import Pill from '../components/pill'
 
 const name = 'Austin Rooks'
 
@@ -16,9 +16,10 @@ export default function Home({
   allPostsData
 }: {
   allPostsData: {
-    date: string
     title: string
     id: string
+    languages: string
+    framework: string
   }[]
 }) {
   return (
@@ -26,16 +27,16 @@ export default function Home({
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <div className='index-intro'>
-        <h2>Hi, I’m Austin, a software engineer based in Milwaukee. I'm currently creating products at Catholic Charities of St. Paul & Minneaplis to make critical non-profit processes more efficient.
+      <section>
+        <div className='mt-36'>
+        <h2 className='text-4xl'>Hi, I’m Austin, a software engineer based in Milwaukee. I'm currently building internal products at Catholic Charities of St. Paul & Minneaplis to make critical non-profit processes more efficient.
           <br />
-          I’m passionate about <span>software</span>
+          I’m passionate about <span>...</span>
         </h2>
         </div>
       </section>
       <section>
-        <div style={{height: '100px'}}>
+        <div className='h-28'>
           <a href='mailto:austin@r00ks.io' className='btn btn-lg' aria-label='email'>
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
@@ -48,17 +49,20 @@ export default function Home({
         </div>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Work</h2>
+        <h2 className='text-2xl leading-snug mt-4 mb-4'>Work</h2>
         <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
+          {allPostsData.map(({ id, title, languages }) => (
+            <li className='text-3xl mt-8 mb-8' key={id}>
               <Link href={`/projects/${id}`}>
-                <a>{title}</a>
+                <a className='hover:text-primary-blue'>{title}</a>
               </Link>
               <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
+              {/* <small className={utilStyles.lightText}>
+                {`${language} (${framework})`} 
+              </small> */}
+              <div className='flex align-start mt-4'>
+                {languages.split(', ').map(language => <Pill language={language} key={language}/>)}
+              </div>
             </li>
           ))}
         </ul>
