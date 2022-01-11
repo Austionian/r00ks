@@ -32,7 +32,7 @@ export default function Layout({
           </div>
         )}
         <footer className='inline-flex'>
-          <FontAwesomeIcon icon={faCopyright} className='pr-1'/>{new Date().getFullYear()}
+          <FontAwesomeIcon icon={faCopyright} className='pr-1 h-4'/>{new Date().getFullYear()}
           {' | '}
           Made with <a href='https://nextjs.org/' className='pl-1 pr-1 hover:text-primary-blue'>Next.js</a>
           {` | `}

@@ -20,14 +20,14 @@ const Pill = ({ language }) => {
     }
 
     let bg = `bg-${language.trim().toLowerCase()}`;
-    let className = `flex items-center justify-center p-2 mr-2 rounded-2xl w-24 h-8 text-sm pill-text`;
+    let className = `flex items-center justify-center p-2 mr-2 rounded-2xl w-24 h-8 text-sm text-white`;
     className = className + ' ' + bg;
 
     if (lanuageMatrix[language].fa) {
         const Icon = lanuageMatrix[language].icon;
         return (
             <div className={className}>
-                <FontAwesomeIcon icon={Icon} className="h-4" style={{fill: '#fff'}}/><p className="pl-2 m-0 text-white">{language}</p>
+                <FontAwesomeIcon icon={Icon} className="h-4" style={{fill: '#fff'}}/><p className="pl-2 m-0">{language}</p>
             </div>
         )
     }
@@ -43,14 +43,14 @@ const Pill = ({ language }) => {
         const TypeScriptIcon = require('../public/assets/svg/typescript.svg')
         return (
             <div className={className} style={{width: '125px'}}>
-                <TypeScriptIcon className="h-4 w-4" style={{fill: '#fff'}}/><p className="pl-2 m-0 text-white">{language}</p>
+                <TypeScriptIcon className="h-4 w-4" style={{fill: '#fff'}}/><p className="pl-2 m-0">{language}</p>
             </div>
         )
     }
     const Icon = require(`../public/assets/svg/${language.trim().toLowerCase()}.svg`)
     return (
         <div className={className}>
-            <Icon className="h-4 w-4" style={{fill: '#fff'}}/><p className="pl-2 m-0 text-white">{language}</p>
+            <Icon className="h-4 w-4" style={{fill: '#fff'}}/><p className="pl-2 m-0">{language}</p>
         </div>
     )
 }
