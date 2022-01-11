@@ -1,8 +1,4 @@
 /* CSS Custom Properties Definitions */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
 :root {
   --maxWidth-none: "none";
   --maxWidth-xs: 20rem;
@@ -379,3 +375,7 @@ progress {background-color: var(--color-text-dark);}
   font-weight: var(--fontWeight-bold);
   color: var(--color-primary-theme);
 }
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
