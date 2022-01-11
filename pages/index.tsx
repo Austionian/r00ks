@@ -27,9 +27,9 @@ export default function Home({
       </Head>
       <section>
         <div className='mt-36'>
-        <h2 className='text-4xl'>
-          Hi, I’m Austin, a product-centric developer based in Milwaukee. I'm currently building internal products at Catholic Charities of St. Paul & Minneaplis to make critical non-profit processes more efficient.
-        </h2>
+          <h2 className='text-4xl'>
+            Hi, I’m Austin, a product-centric developer based in Milwaukee. I'm currently building internal products at Catholic Charities of St. Paul & Minneaplis to make critical non-profit processes more efficient.
+          </h2>
         </div>
       </section>
       <section>
