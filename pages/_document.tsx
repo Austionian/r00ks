@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
               key='r00ks-theme'
               dangerouslySetInnerHTML={{ 
                 __html: `
-                (function() {
+                !(function() {
                     var theme = localStorage.getItem('theme');
                     var supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
                     if (!theme && supportDarkMode) {

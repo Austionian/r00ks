@@ -23,5 +23,8 @@ module.exports = {
           'django': '#092e20',
         },
       }
-    }
+    },
+    plugins: [
+      require('@tailwindcss/typography'),
+    ]
 }

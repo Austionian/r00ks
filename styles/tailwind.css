@@ -1,4 +1,8 @@
 /* CSS Custom Properties Definitions */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 :root {
   --maxWidth-none: "none";
   --maxWidth-xs: 20rem;
@@ -176,17 +180,6 @@ h5 {
 
 h6 {
   font-size: var(--fontSize-1);
-}
-
-
-/* Prose */
-
-p {
-  line-height: var(--spacing-8);
-  --baseline-multiplier: 0.179;
-  --x-height-multiplier: 0.35;
-  margin: var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0);
-  padding: var(--spacing-0);
 }
 
 ::selection {
@@ -375,7 +368,3 @@ progress {background-color: var(--color-text-dark);}
   font-weight: var(--fontWeight-bold);
   color: var(--color-primary-theme);
 }
-
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';

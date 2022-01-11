@@ -28,7 +28,7 @@ export default function Post({
           </Link>
         </div>
         <h1 className="text-4xl font-extrabold tracking-tighter my-3 mx-0">{postData.title}</h1>
-        <div className='flex align-start mt-4 mb-12'>
+        <div className='flex align-start mt-4 mb-12 prose'>
           {postData.languages.split(', ').map(language => <Pill language={language} key={language}/>)}
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
