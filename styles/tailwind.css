@@ -120,7 +120,7 @@ body {
   font-family: var(--font-body);
   font-size: 18px;
   background: var(--bg);
-  transition: background 0.2s ease-in, color 0.2s ease-in;
+  
 }
 
 footer {
