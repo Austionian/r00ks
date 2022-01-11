@@ -192,7 +192,6 @@ h6 {
   border-width: 1px;
   cursor: pointer;
   justify-content: center;
-  padding: 1.5rem 2rem;
   text-align: center;
   white-space: nowrap;
   -webkit-appearance: none;
@@ -208,7 +207,6 @@ h6 {
   color: var(--color-text);
   text-decoration: none;
   font-weight: var(--fontWeight-semibold);
-  margin: 1rem;
 }
 
 .btn:hover {
@@ -221,8 +219,7 @@ h6 {
 }
 
 .btn > svg {
-  padding-left: 3px;
-  height: 25px;
+  height: 30px;
 }
 
 /* Custom classes */

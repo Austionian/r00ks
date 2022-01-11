@@ -2,7 +2,7 @@ import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBlog, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faBlog, faPaperPlane, faFileAlt } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 import Layout, { siteTitle } from '../components/layout'
@@ -33,15 +33,18 @@ export default function Home({
         </div>
       </section>
       <section>
-        <div className='pb-10 flex flex-col sm:flex-row'>
-          <a href='mailto:austin@r00ks.io' className='btn btn-lg' aria-label='email'>
-            <FontAwesomeIcon icon={faEnvelope} />
+        <div className='pb-10 flex flex-row'>
+          <a href='mailto:austin@r00ks.io' className='btn btn-lg py-4 px-6 m-1 sm:m-4 sm:py-6 sm:px-8' aria-label='email'>
+            <FontAwesomeIcon icon={faPaperPlane} />
           </a>
-          <a href='https://github.com/austionian' className='btn btn-lg' aria-label='github'>
+          <a href='https://github.com/austionian' className='btn btn-lg py-4 px-6 m-1 sm:m-4 sm:py-6 sm:px-8' aria-label='github'>
             <FontAwesomeIcon icon={faGithub} />
           </a>
-          <a href='https://blog.r00ks.io' className='btn btn-lg' aria-label='blog'>
+          <a href='https://blog.r00ks.io' className='btn btn-lg py-4 px-6 m-1 sm:m-4 sm:py-6 sm:px-8' aria-label='blog'>
             <FontAwesomeIcon icon={faBlog} />
+          </a>
+          <a href='https://read.cv/rooks' className='btn btn-lg py-4 px-6 m-1 sm:m-4 sm:py-6 sm:px-8' aria-label='CV'>
+            <FontAwesomeIcon icon={faFileAlt} />
           </a>
         </div>
       </section>
