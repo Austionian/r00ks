@@ -120,7 +120,6 @@ body {
   font-family: var(--font-body);
   font-size: 18px;
   background: var(--bg);
-  transition: background 0.2s ease-in, color 0.2s ease-in;
 }
 
 footer {
@@ -141,7 +140,6 @@ h6 {
   margin-bottom: var(--spacing-6);
   line-height: var(--lineHeight-tight);
   letter-spacing: -0.025em;
-  transition: 0.2s;
 }
 
 h2,
@@ -162,7 +160,6 @@ h1 {
 
 h2 {
   font-size: var(--fontSize-5);
-  transition: 0.3s;
 }
 
 h3 {
@@ -211,7 +208,6 @@ h6 {
   color: var(--color-text);
   text-decoration: none;
   font-weight: var(--fontWeight-semibold);
-  transition: background-color 0.2s ease-in, color 0.2s ease-in;
   margin: 1rem;
 }
 
@@ -239,7 +235,6 @@ h6 {
   opacity: 1;
   z-index: 99;
   margin: auto;
-  transition: background 0.2s ease-in, font-size 0.2s ease-in, box-shadow 0.2s ease-in;
 }
 
 /* styles for when the header is in sticky mode */
@@ -266,7 +261,6 @@ nav > ul > li {
 
 .leftNav.isSticky {
   opacity: 1;
-  transition: 0.5s;
 }
 
 .article {
@@ -283,7 +277,7 @@ nav > ul > li {
     top: 225px;
     left: 0;
     width: 300px;
-    transition: color 0.2s ease-in;
+
   }
 }
 

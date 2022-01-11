@@ -32,7 +32,6 @@ export default class MyDocument extends Document {
           />
           <Main />
           <NextScript />
-          <script> </script>
         </body>
       </Html>
     )
