@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react'
 import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -8,10 +7,8 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 import Layout, { siteTitle } from '../components/layout'
 import { getSortedProjectsData } from '../lib/projects'
-import utilStyles from '../styles/utils.module.css'
 import Pill from '../components/pill'
 
-const name = 'Austin Rooks'
 
 export default function Home({
   allPostsData
@@ -36,7 +33,7 @@ export default function Home({
         </div>
       </section>
       <section>
-        <div className='h-28'>
+        <div className='pb-10 flex flex-col sm:flex-row'>
           <a href='mailto:austin@r00ks.io' className='btn btn-lg' aria-label='email'>
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
@@ -48,9 +45,9 @@ export default function Home({
           </a>
         </div>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      <section>
         <h2 className='text-xl leading-snug mt-4 mb-4 font-extralight'>SELECTED WORK</h2>
-        <ul className={utilStyles.list}>
+        <ul className='p-0 m-0 list-none'>
           {allPostsData.map(({ id, title, languages }) => (
             <li className='text-4xl mt-8 mb-8 font-bold' key={id}>
               <Link href={`/projects/${id}`}>

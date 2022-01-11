@@ -27,7 +27,7 @@ const Pill = ({ language }) => {
         const Icon = lanuageMatrix[language].icon;
         return (
             <div className={className}>
-                <FontAwesomeIcon icon={Icon} className="h-4"/><p className="pl-2 m-0">{language}</p>
+                <FontAwesomeIcon icon={Icon} className="h-4" style={{fill: '#fff'}}/><p className="pl-2 m-0 text-white">{language}</p>
             </div>
         )
     }
@@ -43,14 +43,14 @@ const Pill = ({ language }) => {
         const TypeScriptIcon = require('../public/assets/svg/typescript.svg')
         return (
             <div className={className} style={{width: '125px'}}>
-                <TypeScriptIcon className="h-4 w-4" style={{fill: '#fff'}}/><p className="pl-2 m-0">{language}</p>
+                <TypeScriptIcon className="h-4 w-4" style={{fill: '#fff'}}/><p className="pl-2 m-0 text-white">{language}</p>
             </div>
         )
     }
     const Icon = require(`../public/assets/svg/${language.trim().toLowerCase()}.svg`)
     return (
         <div className={className}>
-            <Icon className="h-4 w-4" style={{fill: '#fff'}}/><p className="pl-2 m-0">{language}</p>
+            <Icon className="h-4 w-4" style={{fill: '#fff'}}/><p className="pl-2 m-0 text-white">{language}</p>
         </div>
     )
 }
