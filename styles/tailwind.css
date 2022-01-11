@@ -1,8 +1,4 @@
 /* CSS Custom Properties Definitions */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
-
 :root {
   --maxWidth-none: "none";
   --maxWidth-xs: 20rem;
@@ -115,6 +111,10 @@ body.dark {
   --selection-color: var(--color-primary-theme);
   --box-shadow: 0 20px 20px -20px #000;
 }
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 body {
   color: var(--color-text);
