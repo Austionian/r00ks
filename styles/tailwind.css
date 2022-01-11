@@ -114,7 +114,6 @@ body.dark {
 
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
 
 body {
   color: var(--color-text);
