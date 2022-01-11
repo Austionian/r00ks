@@ -47,17 +47,10 @@ const Pill = ({ language }) => {
             </div>
         )
     }
-    if (language === 'Flask') {
-        const FlaskIcon = require('../public/assets/svg/flask.svg')
-        return (
-            <div className={className}>
-                <FlaskIcon className="h-4 w-4" style={{fill: '#fff'}}/><p className="pl-2 m-0">{language}</p>
-            </div>
-        )
-    }
+    const Icon = require(`../public/assets/svg/${language.trim().toLowerCase()}.svg`)
     return (
         <div className={className}>
-            <p className="pl-2 m-0">{language}</p>
+            <Icon className="h-4 w-4" style={{fill: '#fff'}}/><p className="pl-2 m-0">{language}</p>
         </div>
     )
 }

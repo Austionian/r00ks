@@ -148,6 +148,7 @@ h6 {
   margin-bottom: var(--spacing-6);
   line-height: var(--lineHeight-tight);
   letter-spacing: -0.025em;
+  transition: 0.2s;
 }
 
 h2,

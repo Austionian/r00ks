@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
@@ -29,9 +30,8 @@ export default function Home({
       </Head>
       <section>
         <div className='mt-36'>
-        <h2 className='text-4xl'>Hi, I’m Austin, a software engineer based in Milwaukee. I'm currently building internal products at Catholic Charities of St. Paul & Minneaplis to make critical non-profit processes more efficient.
-          <br />
-          I’m passionate about <span>...</span>
+        <h2 className='text-4xl'>
+          Hi, I’m Austin, a product-centric developer based in Milwaukee. I'm currently building internal products at Catholic Charities of St. Paul & Minneaplis to make critical non-profit processes more efficient.
         </h2>
         </div>
       </section>
@@ -49,17 +49,14 @@ export default function Home({
         </div>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className='text-2xl leading-snug mt-4 mb-4'>Work</h2>
+        <h2 className='text-xl leading-snug mt-4 mb-4 font-extralight'>SELECTED WORK</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, title, languages }) => (
-            <li className='text-3xl mt-8 mb-8' key={id}>
+            <li className='text-4xl mt-8 mb-8 font-bold' key={id}>
               <Link href={`/projects/${id}`}>
                 <a className='hover:text-primary-blue'>{title}</a>
               </Link>
               <br />
-              {/* <small className={utilStyles.lightText}>
-                {`${language} (${framework})`} 
-              </small> */}
               <div className='flex align-start mt-4'>
                 {languages.split(', ').map(language => <Pill language={language} key={language}/>)}
               </div>
