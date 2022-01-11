@@ -4,8 +4,7 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head />
-        <body>
+        <Head>
             <script 
                 key='r00ks-theme'
                 dangerouslySetInnerHTML={{ 
@@ -30,6 +29,8 @@ export default class MyDocument extends Document {
                   } catch (e) {} })();`,
                 }}
             />
+        </Head>
+        <body>
             <Main />
             <NextScript />
         </body>
