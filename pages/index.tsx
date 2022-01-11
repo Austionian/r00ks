@@ -49,7 +49,7 @@ export default function Home({
         <h2 className='text-xl leading-snug mt-4 mb-4 font-extralight'>SELECTED WORK</h2>
         <ul className='p-0 m-0 list-none'>
           {allPostsData.map(({ id, title, languages }) => (
-            <li className='text-4xl mt-8 mb-8 font-bold' key={id}>
+            <li className='text-3xl mt-8 mb-8' key={id}>
               <Link href={`/projects/${id}`}>
                 <a className='hover:text-primary-blue'>{title}</a>
               </Link>
