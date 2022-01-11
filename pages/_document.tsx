@@ -4,12 +4,13 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
-        <Head>
+        <Head />
+        <body>
             <script 
-                key='r00ks-theme'
-                dangerouslySetInnerHTML={{ 
+              key='r00ks-theme'
+              dangerouslySetInnerHTML={{ 
                 __html: `
-                (function() { try {
+                (function() {
                     var theme = localStorage.getItem('theme');
                     var supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
                     if (!theme && supportDarkMode) {
@@ -25,12 +26,10 @@ export default class MyDocument extends Document {
                         document.querySelector('meta[name="theme-color"]').setAttribute("content", '#0e1117');
                     } else {
                         document.querySelector('meta[name="theme-color"]').setAttribute("content", '#3164dc');
-                    }
-                  } catch (e) {} })();`,
-                }}
+                    } 
+                })();`,
+              }}
             />
-        </Head>
-        <body>
             <Main />
             <NextScript />
         </body>
