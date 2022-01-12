@@ -129,6 +129,13 @@ footer {
 
 /* Heading */
 
+.product-link:hover {
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(49,100,220,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 h1,
 h2,
 h3,

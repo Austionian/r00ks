@@ -1,7 +1,6 @@
 import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBlog, faPaperPlane, faFileAlt } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -19,7 +18,7 @@ export default function Home({
     title: string
     id: string
     languages: string
-    framework: string
+    description: string
   }[]
 }) {
   return (
@@ -92,11 +91,10 @@ export default function Home({
           {allPostsData.map(({ id, title, languages }) => (
             <li className='text-3xl mt-8 mb-8' key={id}>
               <Link href={`/projects/${id}`}>
-                <a className='hover:text-primary-blue'>
-                  {title}
+                <a className='flex items-center font-bold product-link'>
+                  {title}<span className='text-sm pl-2'>→</span>
                 </a>
               </Link>
-              <br />
               <div className='flex align-start mt-4'>
                 {languages.split(', ').map(language => <Pill language={language} key={language}/>)}
               </div>
