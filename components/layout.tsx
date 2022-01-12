@@ -18,7 +18,7 @@ export default function Layout({
     <>
       <Meta />
       <div className="fixed w-full z-50 top-0 right-0">
-        <div className="h-1.5 bg-primary-blue">
+        <div className="h-1.5 gradient">
         </div>
       </div>
       <Nav />

@@ -222,6 +222,11 @@ h6 {
   height: 30px;
 }
 
+.gradient {
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(49,100,220,1) 100%);
+}
+
 /* Custom classes */
 .global-header[data-is-root-path="false"] {
   position: sticky;

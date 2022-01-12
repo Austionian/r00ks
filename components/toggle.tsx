@@ -40,7 +40,7 @@ const ThemeToggle = () => {
                 onClick={() => setDarkTheme(!dark_theme)}
             >
             {dark_theme ? (
-                <svg className="w-8 h-8 md:w-10 md:h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-8 h-8 md:w-9 md:h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -49,7 +49,7 @@ const ThemeToggle = () => {
                 />
                 </svg>
             ) : (
-                <svg className="w-8 h-8 md:w-10 md:h-10" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="w-8 h-8 md:w-9 md:h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path
                     strokeLinecap="round"
                     strokeLinejoin="round"

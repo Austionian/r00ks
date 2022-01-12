@@ -1,6 +1,7 @@
 import { GetStaticProps } from 'next'
 import Head from 'next/head'
 import Link from 'next/link'
+import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBlog, faPaperPlane, faFileAlt } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -55,16 +56,9 @@ export default function Home({
           {allPostsData.map(({ id, title, languages }) => (
             <li className='text-3xl mt-8 mb-8' key={id}>
               <Link href={`/projects/${id}`}>
-                <motion.a 
-                  className='hover:text-primary-blue'
-                  whileHover={{
-                    scale: 1.2,
-                    transition: { duration: .3 },
-                  }}
-                  whileTap={{ scale: 0.7 }}
-                >
+                <a className='hover:text-primary-blue'>
                   {title}
-                </motion.a>
+                </a>
               </Link>
               <br />
               <div className='flex align-start mt-4'>
