@@ -36,18 +36,54 @@ export default function Home({
       </section>
       <section>
         <div className='pb-10 flex flex-row'>
-          <a href='mailto:austin@r00ks.io' className='btn btn-lg py-4 px-6 m-1 sm:m-4 sm:py-6 sm:px-8' aria-label='email'>
+          <motion.a 
+            whileHover={{
+                scale: 1.3,
+                transition: { duration: .2 },
+            }}
+            whileTap={{ scale: 0.7 }}
+            href='mailto:austin@r00ks.io'
+            className='btn btn-lg py-4 px-6 m-1 sm:m-4 sm:py-6 sm:px-8'
+            aria-label='email'
+          >
             <FontAwesomeIcon icon={faPaperPlane} />
-          </a>
-          <a href='https://github.com/austionian' className='btn btn-lg py-4 px-6 m-1 sm:m-4 sm:py-6 sm:px-8' aria-label='github'>
+          </motion.a>
+          <motion.a 
+            whileHover={{
+                scale: 1.3,
+                transition: { duration: .2 },
+            }}
+            whileTap={{ scale: 0.7 }}
+            href='https://github.com/austionian'
+            className='btn btn-lg py-4 px-6 m-1 sm:m-4 sm:py-6 sm:px-8'
+            aria-label='github'
+          >
             <FontAwesomeIcon icon={faGithub} />
-          </a>
-          <a href='https://blog.r00ks.io' className='btn btn-lg py-4 px-6 m-1 sm:m-4 sm:py-6 sm:px-8' aria-label='blog'>
+          </motion.a>
+          <motion.a 
+            whileHover={{
+                scale: 1.3,
+                transition: { duration: .2 },
+            }}
+            whileTap={{ scale: 0.7 }}
+            href='https://blog.r00ks.io'
+            className='btn btn-lg py-4 px-6 m-1 sm:m-4 sm:py-6 sm:px-8'
+            aria-label='blog'
+          >
             <FontAwesomeIcon icon={faBlog} />
-          </a>
-          <a href='https://read.cv/rooks' className='btn btn-lg py-4 px-6 m-1 sm:m-4 sm:py-6 sm:px-8' aria-label='CV'>
+          </motion.a>
+          <motion.a 
+            whileHover={{
+                scale: 1.3,
+                transition: { duration: .2 },
+            }}
+            whileTap={{ scale: 0.7 }}
+            href='https://read.cv/rooks'
+            className='btn btn-lg py-4 px-6 m-1 sm:m-4 sm:py-6 sm:px-8'
+            aria-label='CV'
+          >
             <FontAwesomeIcon icon={faFileAlt} />
-          </a>
+          </motion.a>
         </div>
       </section>
       <section>
