@@ -129,7 +129,7 @@ footer {
 
 /* Heading */
 
-.product-link:hover {
+a.product-link:hover {
   background: rgba(49,100,220,1);
   background: linear-gradient(90deg, rgba(49,100,220,1) 0%, rgba(238,174,202,1) 100%);
   -webkit-background-clip: text;
