@@ -10,9 +10,6 @@ const ThemeToggle = () => {
 
     const [dark_theme, setDarkTheme] = useState(getTheme())
 
-    const Moon = require('../public/assets/svg/moon.svg');
-    const Sun = require('../public/assets/svg/sun.svg')
-
     useEffect(() => {
         if (dark_theme) {
           document.body.classList.add("dark");
@@ -38,6 +35,7 @@ const ThemeToggle = () => {
                 }}
                 whileTap={{ scale: 0.7 }}
                 onClick={() => setDarkTheme(!dark_theme)}
+                aria-label='toggle between light and dark theme.'
             >
             {dark_theme ? (
                 <svg className="w-8 h-8 md:w-9 md:h-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
