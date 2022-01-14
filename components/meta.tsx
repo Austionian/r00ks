@@ -35,6 +35,7 @@ const Meta = () => {
         name="description"
         content={`A personal portfolio site for Austin Rooks (r00ks).`}
       />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
     </Head>
   )
 }
