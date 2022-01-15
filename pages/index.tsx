@@ -90,11 +90,13 @@ export default function Home({
         <ul className='p-0 m-0 list-none'>
           {allPostsData.map(({ id, title, languages }) => (
             <li className='text-3xl mt-8 mb-8' key={id}>
-              <Link href={`/projects/${id}`}>
-                <a className='flex items-center font-bold product-link'>
-                  {title}<span className='text-sm pl-2'>→</span>
-                </a>
-              </Link>
+              <div className='flex items-center'>
+                <Link href={`/projects/${id}`}>
+                  <a className='font-bold product-link'>
+                    {title}<span className='text-sm pl-2 align-middle'>→</span>
+                  </a>
+                </Link>
+              </div>
               <div className='flex align-start mt-4'>
                 {languages.split(', ').map(language => <Pill language={language} key={language}/>)}
               </div>
