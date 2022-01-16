@@ -93,6 +93,7 @@ body {
   --selection-bg: rgba(49, 100, 220, .3);
   --selection-color: var(--color-primary-theme);
   --box-shadow: 0 5px 20px -20px rgba(0,0,0,0.7);
+  --color-opp: #000;
 }
 
 body.dark {
@@ -110,6 +111,7 @@ body.dark {
   --selection-bg: rgba(49, 100, 220, .3);
   --selection-color: var(--color-primary-theme);
   --box-shadow: 0 20px 20px -20px #000;
+  --color-opp: #fff;
 }
 
 @import 'tailwindcss/base';
@@ -136,6 +138,10 @@ a.product-link:hover {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0px 0px #00000000;
+}
+
+p {
+  padding: 10px 0;
 }
 
 h1,
@@ -188,12 +194,12 @@ h6 {
 }
 
 ::selection {
-  background: var(--selection-bg);
-  color: var(--selection-color);
+  background: rgba(238,174,202,.5);
+  color: var(--color-opp);
 }
 ::-moz-selection {
-  background: var(--selection-bg);
-  color: var(--selection-color);
+  background: rgba(238,174,202,.5);
+  color: var(--color-opp);
 }
 
 .btn {
