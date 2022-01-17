@@ -27,16 +27,16 @@ export default function Layout({
         {!home && (
           <div className="mx-0 mt-12 mb-0">
             <Link href="/">
-              <a className='hover:text-primary-blue'>← Back to home</a>
+              <a>← Back to home</a>
             </Link>
           </div>
         )}
         <footer className='inline-flex'>
           <FontAwesomeIcon icon={faCopyright} className='pr-1 h-4'/>{new Date().getFullYear()}
           {' | '}
-          Made with <a href='https://nextjs.org/' className='pl-1 pr-1 hover:text-primary-blue'>Next.js</a>
+          Made with <a href='https://nextjs.org/' className='pl-1 pr-1'>Next.js</a>
           {` | `}
-          <a href="https://github.com/Austionian/r00ks" className='pl-1 hover:text-primary-blue'>
+          <a href="https://github.com/Austionian/r00ks" className='pl-1'>
             Source Code
           </a>
         </footer>
