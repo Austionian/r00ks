@@ -106,7 +106,7 @@ body.dark {
   --color-heading: #e3e3e3;
   --color-heading-main: #e3e3e3;
   --color-pill: #c9d1d9;
-  --bg: #0e1117;
+  --bg: #000;
   --color-icon-filter: invert(100%) brightness(200%);
   --selection-bg: rgba(49, 100, 220, .3);
   --selection-color: var(--color-primary-theme);
@@ -132,8 +132,8 @@ footer {
 /* Heading */
 
 a:hover {
-  background: rgba(49,100,220,1);
-  background: linear-gradient(90deg, rgba(49,100,220,1) 0%, rgba(238,174,202,1) 100%);
+  background: #7268ff;
+  background: linear-gradient(90deg, #7268ff 0%, #62a8b5 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -237,8 +237,8 @@ h6 {
 }
 
 .gradient {
-  background: rgb(238,174,202);
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(49,100,220,1) 100%);
+  background: #7268ff;
+  background: linear-gradient(90deg, #7268ff 0%, #62a8b5 100%);
 }
 
 /* Custom classes */
