@@ -90,8 +90,6 @@ body {
   --color-pill: #fff;
   --bg: rgb(249, 250, 251);
   --color-icon-filter: invert(0);
-  --selection-bg: rgba(49, 100, 220, .3);
-  --selection-color: var(--color-primary-theme);
   --box-shadow: 0 5px 20px -20px rgba(0,0,0,0.7);
   --color-opp: #000;
 }
@@ -108,8 +106,6 @@ body.dark {
   --color-pill: #c9d1d9;
   --bg: #000;
   --color-icon-filter: invert(100%) brightness(200%);
-  --selection-bg: rgba(49, 100, 220, .3);
-  --selection-color: var(--color-primary-theme);
   --box-shadow: 0 20px 20px -20px #000;
   --color-opp: #fff;
 }
@@ -194,11 +190,11 @@ h6 {
 }
 
 ::selection {
-  background: rgba(238,174,202,.5);
+  background: #7268ff54;
   color: var(--color-opp);
 }
 ::-moz-selection {
-  background: rgba(238,174,202,.5);
+  background: #7268ff54;
   color: var(--color-opp);
 }
 
