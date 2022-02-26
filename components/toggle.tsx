@@ -1,6 +1,8 @@
 import * as React from "react"
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
+import { Transition } from '@headlessui/react'
+import { useTimeoutFn } from 'react-use'
 
 import { getTheme } from '../lib/theme'
 import useIsClient from "../lib/useIsClient"
@@ -26,14 +28,13 @@ const ThemeToggle = () => {
 
     if ( !isClient ) return null;
     return ( 
-        // ADD FRAMER MOTION!!
         <div>
             <motion.button
                 whileHover={{
                     scale: 1.2,
                     transition: { duration: .2 },
                 }}
-                whileTap={{ scale: 0.7 }}
+                whileTap={{ scale: 0.9, rotate: 360, }}
                 onClick={() => setDarkTheme(!dark_theme)}
                 aria-label='toggle between light and dark theme.'
             >

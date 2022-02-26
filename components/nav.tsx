@@ -1,4 +1,4 @@
-import ThemeToggle from './toggle'
+import ThemeToggle from './ThemeToggle'
 
 const Nav = () => (
     <nav className='flex justify-end max-w-5xl m-auto p-5 sm:p-6'>
