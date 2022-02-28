@@ -1,8 +1,6 @@
 import Nav from "./Nav";
 import Footer from "./Footer";
 
-export const siteTitle = "r00ks.io";
-
 const LayoutWrapper = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
