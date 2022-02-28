@@ -1,5 +1,5 @@
-import ThemeSwitch from "./themeSwitch";
-import Logo from "../data/logo.svg";
+import ThemeSwitch from "./ThemeSwitch";
+import Logo from "../public/assets/svg/logo.svg";
 import { motion } from "framer-motion";
 
 const Nav = () => (

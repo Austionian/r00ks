@@ -1,9 +1,9 @@
 import { GetStaticProps } from "next";
 import Link from "next/link";
-import SocialBtns from "@/components/socialBtns";
+import SocialBtns from "@/components/SocialBtns";
 
-import { getSortedProjectsData } from "../lib/projects";
-import Pill from "@/components/pill";
+import { getSortedProjectsData } from "@/lib/projects";
+import Pill from "@/components/Pill";
 
 export default function Home({
   allPostsData,
