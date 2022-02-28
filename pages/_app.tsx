@@ -6,7 +6,7 @@ import Head from "next/head";
 
 import siteMetadata from "../data/siteMetadata.js";
 // import Analytics from '@/components/analytics'
-import LayoutWrapper from "../components/LayoutWrapper";
+import LayoutWrapper from "../components/layoutWrapper";
 // import { ClientReload } from '@/components/ClientReload'
 
 const isDevelopment = process.env.NODE_ENV === "development";

@@ -1,4 +1,4 @@
-import ThemeSwitch from "./ThemeSwitch";
+import ThemeSwitch from "./themeSwitch";
 import Logo from "../data/logo.svg";
 import { motion } from "framer-motion";
 
