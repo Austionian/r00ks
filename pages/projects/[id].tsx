@@ -2,8 +2,8 @@ import Head from "next/head";
 import { GetStaticProps, GetStaticPaths } from "next";
 import Link from "next/link";
 
-import { getAllPostIds, getPostData } from "../../lib/projects";
-import Pill from "../../components/pill";
+import { getAllPostIds, getPostData } from "@/lib/projects";
+import Pill from "@/components/Pill";
 
 export default function Post({
   postData,
