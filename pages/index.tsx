@@ -3,7 +3,7 @@ import Link from "next/link";
 import SocialBtns from "@/components/SocialBtns";
 
 import { getSortedProjectsData } from "@/lib/projects";
-import Pill from "@/components/Pill";
+// import Pill from "@/components/Pill";
 
 export default function Home({
   allPostsData,
@@ -47,9 +47,9 @@ export default function Home({
                 </Link>
               </div>
               <div className="flex align-start mt-4">
-                {languages.split(", ").map((language) => (
+                {/* {languages.split(", ").map((language) => (
                   <Pill language={language} key={language} />
-                ))}
+                ))} */}
               </div>
             </li>
           ))}
