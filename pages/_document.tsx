@@ -29,7 +29,6 @@ class MyDocument extends Document {
             color="#5bbad5"
           />
           <meta name="msapplication-TileColor" content="#000000" />
-          <meta title="r00ks.io" />
           <meta name="theme-color" content="var(--bg)" />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />

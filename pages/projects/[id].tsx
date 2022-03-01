@@ -3,6 +3,7 @@ import { GetStaticProps, GetStaticPaths } from "next";
 import Link from "next/link";
 
 import { getAllPostIds, getPostData } from "@/lib/projects";
+import SEO from "@/components/SEO";
 // import Pill from "@/components/Pill";
 
 export default function Post({
@@ -16,9 +17,7 @@ export default function Post({
 }) {
   return (
     <>
-      <Head>
-        <title>{postData.title}</title>
-      </Head>
+      <SEO title={`r00ks: ${postData.title}`} />
       <article>
         <div className="mx-0 mt-0 mb-12">
           <Link href="/">
