@@ -1,5 +1,5 @@
 import ThemeSwitch from "./ThemeSwitch";
-import Logo from "../public/assets/svg/logo.svg";
+// import Logo from "../public/assets/svg/logo.svg";
 import { motion } from "framer-motion";
 
 const Nav = () => (
@@ -15,7 +15,7 @@ const Nav = () => (
           repeatDelay: 0.5,
         }}
       >
-        <Logo />
+        {/* <Logo /> */}
       </motion.div>
       <h1 className="text-3xl md:text-4xl font-bold ml-4 mono-type">
         AUSTIN ROOKS
