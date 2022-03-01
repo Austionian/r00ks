@@ -4,6 +4,7 @@ import SocialBtns from "@/components/SocialBtns";
 
 import { getSortedProjectsData } from "@/lib/projects";
 import SEO from "@/components/SEO";
+import siteMetadata from "@/data/siteMetadata";
 // import Pill from "@/components/Pill";
 
 export default function Home({
@@ -18,7 +19,7 @@ export default function Home({
 }) {
   return (
     <>
-      <SEO title="r00ks" />
+      <SEO title={`${siteMetadata.title}`} />
       <section>
         <div className="mt-12">
           <h2 className="text-4xl md:text-7xl lg:text-8xl xl:text-9xl font-extrabold mono-type">

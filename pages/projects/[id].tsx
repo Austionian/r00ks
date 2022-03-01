@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import { getAllPostIds, getPostData } from "@/lib/projects";
 import SEO from "@/components/SEO";
+import siteMetadata from "@/data/siteMetadata";
 // import Pill from "@/components/Pill";
 
 export default function Post({
@@ -12,12 +13,16 @@ export default function Post({
   postData: {
     title: string;
     languages: string;
+    description: string;
     contentHtml: string;
   };
 }) {
   return (
     <>
-      <SEO title={`r00ks: ${postData.title}`} />
+      <SEO
+        title={`${siteMetadata.title}: ${postData.title}`}
+        description={postData.description}
+      />
       <article>
         <div className="mx-0 mt-0 mb-12">
           <Link href="/">
