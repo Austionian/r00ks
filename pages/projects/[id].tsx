@@ -21,7 +21,9 @@ export default function Post({
       <article>
         <div className="mx-0 mt-0 mb-12">
           <Link href="/">
-            <a className="hover:text-primary-blue">← Back to home</a>
+            <a className="hover:text-primary-600 dark:hover:text-primary-400">
+              ← Back to home
+            </a>
           </Link>
         </div>
         <h1 className="text-4xl font-extrabold tracking-tighter my-3 mx-0 mono-type">
