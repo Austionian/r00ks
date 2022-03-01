@@ -3,7 +3,7 @@ import { GetStaticProps, GetStaticPaths } from "next";
 import Link from "next/link";
 
 import { getAllPostIds, getPostData } from "@/lib/projects";
-import Pill from "@/components/Pill";
+// import Pill from "@/components/Pill";
 
 export default function Post({
   postData,
@@ -29,9 +29,9 @@ export default function Post({
           {postData.title}
         </h1>
         <div className="flex align-start mt-4 mb-12 prose">
-          {postData.languages.split(", ").map((language) => (
+          {/* {postData.languages.split(", ").map((language) => (
             <Pill language={language} key={language} />
-          ))}
+          ))} */}
         </div>
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
       </article>
