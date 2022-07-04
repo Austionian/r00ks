@@ -17,7 +17,7 @@
     "classnames": "^2.3.1",
     "date-fns": "^2.28.0",
     "eslint-import-resolver-typescript": "^3.2.1",
-    "framer-motion": "^6.3.15",
+    "framer-motion": "^6.3.16",
     "gray-matter": "^4.0.3",
     "next": "latest",
     "next-react-svg": "^1.1.3",
