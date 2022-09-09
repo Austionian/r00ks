@@ -29,7 +29,7 @@ class MyDocument extends Document {
             color="#5bbad5"
           />
           <meta name="msapplication-TileColor" content="#000000" />
-          <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+          <meta name="theme-color" content="#47c3fb" media="(prefers-color-scheme: light)" />
           <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
           <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
