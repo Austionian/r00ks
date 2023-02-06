@@ -34,7 +34,7 @@
     "@next/bundle-analyzer": "^13.1.6",
     "@svgr/webpack": "^6.5.1",
     "@tailwindcss/typography": "^0.5.9",
-    "@types/node": "^18.11.18",
+    "@types/node": "^18.11.19",
     "@types/react": "^18.0.27",
     "@types/tailwindcss": "^3.1.0",
     "eslint": "8.33.0",
